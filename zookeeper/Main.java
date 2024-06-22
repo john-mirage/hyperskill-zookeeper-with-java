@@ -13,7 +13,7 @@ public class Main {
             }
             try {
                 int index = Integer.parseInt(input);
-                if (index >= 0 && index <= Animal.values().length) {
+                if (index >= 0 && index < Animal.values().length) {
                     System.out.println(Animal.values()[index].getPicture());
                 } else {
                     System.out.println("Invalid index");
